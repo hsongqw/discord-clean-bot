@@ -5,7 +5,7 @@ from discord.ext import commands
 intents = discord.Intents.default()
 intents.message_content = True  # 메시지 읽기 허용
 
-bot = commands.Bot(command_prefix='', intents=intents)  # 접두사 없이 명령어 사용
+bot = commands.Bot(command_prefix='/', intents=intents)  # 접두사 없이 명령어 사용
 
 @bot.event
 async def on_ready():
